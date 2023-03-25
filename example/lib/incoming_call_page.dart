@@ -175,11 +175,10 @@ class _IncomingCallPageState extends State<IncomingCallPage> {
               backgroundColor: Colors.blue,
               onPressed: () async {
                 await voIPKit.testIncomingCall(
-                  uuid: Uuid().v4(),
-                  callerId: dummyCallId,
-                  callerName: dummyCallerName,
-                  videoType: true
-                );
+                    uuid: Uuid().v4(),
+                    callerId: dummyCallId,
+                    callerName: dummyCallerName,
+                    videoType: true);
                 _timeOut();
               },
             ),

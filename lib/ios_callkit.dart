@@ -190,7 +190,7 @@ class IOSCallKit {
       'uuid': uuid,
       'callerId': callerId,
       'callerName': callerName,
-      'videoType':videoType
+      'videoType': videoType
     });
   }
 

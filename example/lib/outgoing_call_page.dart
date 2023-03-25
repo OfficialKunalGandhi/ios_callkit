@@ -60,7 +60,6 @@ class _OutgoingCallPageState extends State<OutgoingCallPage> {
               : await voIPKit.startCall(
                   uuid: Uuid().v4(),
                   targetName: 'Dummy Tester',
-
                 );
           setState(() {
             isOutgoing = !isOutgoing;

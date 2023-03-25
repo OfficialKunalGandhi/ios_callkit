@@ -1,6 +1,6 @@
 # ios_callkit
 
-One-to-one video call using CallKit and PushKit with flutter iOS app.
+One-to-one video/Audio call using CallKit and PushKit with flutter iOS app.
 
 ## Motivation
 
@@ -40,11 +40,9 @@ We need to use CallKit to handle incoming VoIP notifications from iOS 13. [Check
 
 ```
 <key>FIVKIconName</key>
-<string>AppIcon-VoIPKit</string>
+<string>AppIconName</string>
 <key>FIVKLocalizedName</key>
-<string>VoIP-Kit</string>
-<key>FIVKSupportVideo</key>
-<true/>
+<string>ios_callkit</string>
 <key>FIVKSkipRecallScreen</key>
 <true/>
 ```
@@ -60,7 +58,8 @@ We need to use CallKit to handle incoming VoIP notifications from iOS 13. [Check
 
 Create `.p12` from `.cer` with KeyChainAccess |
 :-: |
-<img src=https://user-images.githubusercontent.com/6649643/88076945-aa9a9d00-cbb5-11ea-9309-5f7f7df8d3b5.png width=520/> |
+
+<img src=https://github.com/OfficialKunalGandhi/ios_callkit/blob/3c8637214ffd49dad4700495ec184721830337a1/qsZk5.jpg width=520/> |
 
 ```
 openssl pkcs12 -in voip_services.p12 -out voip_services.pem -nodes -clcerts
@@ -79,6 +78,7 @@ openssl pkcs12 -in voip_services.p12 -out voip_services.pem -nodes -clcerts
           "uuid": <Version 4 UUID (e.g.: https://www.uuidgenerator.net/version4) >,
           "incoming_caller_id": <your service user id>,
           "incoming_caller_name": <your service user name>,
+          "videoType":true,
         }
     }
 }

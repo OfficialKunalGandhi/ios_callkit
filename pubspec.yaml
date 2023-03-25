@@ -1,7 +1,9 @@
 name: ios_callkit
 description: One-to-one video/Audio call  using CallKit and PushKit with flutter IOS App.
-version: 0.0.2
-homepage:
+version: 0.0.3
+homepage: https://pub.dev/packages/ios_callkit
+repository: https://github.com/OfficialKunalGandhi/ios_callkit
+
 
 environment:
   sdk: '>=2.19.2 <3.0.0'
